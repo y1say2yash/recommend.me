@@ -1,0 +1,33 @@
+/* Custom styles for a more polished look */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Custom checkbox styling */
+.mood-checkbox:checked+label {
+    background-color: #4A5568;
+    /* gray-700 */
+    border-color: #718096;
+    /* gray-500 */
+    color: #F7FAFC;
+    /* gray-100 */
+}
+
+.mood-checkbox:focus+label {
+    box-shadow: 0 0 0 3px rgba(96, 125, 139, 0.5);
+}
